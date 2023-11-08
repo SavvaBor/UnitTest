@@ -1,0 +1,4 @@
+def get_country(country, capital):
+    """Возвращает отформатированную строку страна-столица."""
+    full_country = f "{country}-{capital}"
+    return full_country.title()
