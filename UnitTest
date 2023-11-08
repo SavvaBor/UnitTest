@@ -1,0 +1,12 @@
+import unittest
+
+class CountryTestCase(unittest.TestCase):
+    """Тесты для функции get_country """
+
+    def test_get_country(self):
+        """Параметры вида 'Uk-London' работают правильно?"""
+        formatted_country = get_country('uk', 'london')
+        self.assertEqual(formatted_country, 'Uk-London')
+
+if __name__ == '__main__':
+    unittest.main()
